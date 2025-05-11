@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Application</title>
+</head>
+<body>
+    <h1>Todo Application</h1>
+    <div th:if="${tasks != null and not #lists.isEmpty(tasks)}">
+        <div th:each="task : ${tasks}">
+            <span th:text="${task?.title ?: 'No title'}">Default Task Title</span>
+            <span th:text="${task?.completed} ? ' (completed)' : ' (pending)'"></span>
+        </div>
+    </div>
+    <div th:if="${tasks == null or #lists.isEmpty(tasks)}">
+        <p>No tasks found</p>
+    </div>
+</body>
+</html>
