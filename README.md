@@ -10,7 +10,6 @@ This is the backend of the Vaccination Management System, built using **Spring B
 * **Database:** Relational Database (e.g., MySQL/PostgreSQL)
 * **ORM:** Spring Data JPA (Hibernate)
 * **Authentication:** Basic Auth (for testing) / JWT (JSON Web Token) (recommended for production)
-* **API Documentation:** [Postman Documentation](https://documenter.getpostman.com/view/6868293/2sB2jAa7hR)
 
 ## 📁 Project Structure
 
